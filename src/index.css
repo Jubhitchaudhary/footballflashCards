@@ -1,0 +1,129 @@
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+  background-color: #242424;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* App.css */
+body {
+  display: flex;
+  place-items: center;
+  justify-content: center;
+  min-width: 320px;
+  min-height: 100vh;
+  background-color: #272727; /* Dark gray */
+  color: #ffffff; /* White text */
+  margin: 0; /* Remove default margin */
+  
+}
+
+.heading-main {
+  font-size: 3rem; /* Adjust the font size as needed */
+  text-align: center; /* Align text to the center */
+  color: #62079a; /* White text */
+  margin-bottom: 20px; /* Add space below the main heading */
+}
+
+/* Styling for subheading */
+.heading-sub {
+  font-size: 1.5rem; /* Adjust the font size as needed */
+  text-align: center; /* Align text to the center */
+  color: #026209; /* White text */
+  margin-bottom: 20px; /* Add space below the subheading */
+  
+}
+h3{
+  font-size:medium; /* Adjust the font size as needed */
+  text-align: center; /* Align text to the center */
+  color: #026209; /* White text */
+  margin-bottom: 20px; /* Add space below the subheading */
+
+}
+.card {
+  position: relative;
+  width: 400px; /* Increase the width of the card */
+  height: 300px; /* Increase the height of the card */
+  margin: 20px auto; /* Auto margin horizontally centers the card */
+  perspective: 1000px; /* Set perspective for 3D effect */
+ 
+  color: #ffffff; /* White text */
+  display: flex; /* Use flexbox to center content */
+  align-items: center; /* Center content vertically */
+  justify-content: center; /* Center content horizontally */
+  
+}
+
+.card-content {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  transform-style: preserve-3d; /* Preserve 3D transformations */
+  transition: transform 0.3s; /* Smooth transition for flipping */
+  text-align: center;
+}
+
+.card-content.flipped {
+  transform: rotateY(180deg); /* Rotate the card to reveal the back */
+}
+
+.card-front,
+.card-back {
+  width: 100%;
+  height: 100%;
+  position:absolute;
+  backface-visibility: hidden; /* Hide the back face of the card */
+  display: flex; /* Use flexbox to center content */
+  align-items: center; /* Center content vertically */
+  justify-content: center; /* Center content horizontally */
+}
+
+.card-front {
+  background-color:#181414bf;
+}
+
+.card-back {
+  background-color: #181414bf;
+  transform: rotateY(180deg); /* Initially hide the back of the card */
+}
+
+/* App.css */
+
+button {
+  background-color: #4caf50; /* Green */
+  color: #ffffff; /* White text */
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  display: block; /* Make the button a block-level element */
+  margin: 20px auto; /* Center the button horizontally with top margin */
+  transition: background-color 0.3s ease; /* Smooth transition for background color change */
+}
+
+button:hover {
+  background-color: #0ce8177d; /* Darker green on hover */
+}
+
+
+
+@media (prefers-color-scheme: light) {
+  :root {
+    color: #213547;
+    background-color: #ffffff;
+  }
+  a:hover {
+    color: #747bff;
+  }
+  button {
+    background-color: #f9f9f9;
+  }
+}
