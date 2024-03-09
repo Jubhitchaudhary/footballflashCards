@@ -20,7 +20,7 @@ The following **required** functionality is completed:
 
 Here's a walkthrough of implemented required features:
 
-[<img src='http://i.imgur.com/link/to/your/gif/file.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />](https://www.loom.com/share/a719032cce7445d48eba104cb7c51446?sid=91805c37-bce5-4f01-be32-26c6fcb3cf44)
+https://www.loom.com/share/a719032cce7445d48eba104cb7c51446?sid=dd3cafff-8932-4406-9439-f6734c2c89cd
 
 ## Notes
 
